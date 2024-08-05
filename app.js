@@ -1,6 +1,9 @@
-let kilometers = prompt("Inserire il numero dei chilometri della vostra tratta")
+let kilometers = prompt("Inserisca il numero dei chilometri della sua tratta")
 let age = prompt("Inserisca la sua età")
-fullprice = parseInt(kilometers) * 0.21
+let fullprice = parseFloat(kilometers) * 0.21
+let discount
+let finalprice
+
 if (age < 18) {
    discount = fullprice * 0.20
    finalprice = fullprice - discount
